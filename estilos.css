@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * > {
   padding: 0px;
   margin: 0px;
@@ -12,67 +13,81 @@ body {
   padding: 0;
 }
 
-header {
+/*--------------------------NAVBAR-------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  position: fixed;
   width: 100%;
+  background: #1b1b1b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: darkgoldenrod;
+  padding: 0 50px 0 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-header div.logo {
-  padding: 0px 100px 0px 20px;
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 30%;
-}
-
-header div.logo h1 {
-  font-size: 50px;
-  font-weight: 900;
-  color: white;
-}
-
-header ul {
-  background-color: darkcyan;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header ul li {
-  width: 33%;
-  text-align: center;
-  border: 1px solid black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
 }
 
-header div.sign {
-  background-color: darkgreen;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+nav ul li {
+  margin: 0 5px;
 }
 
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  color: #111;
+  background: #fff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/*----------------------------Fin de navbar-----------------------------------------------*/
 section.contenido {
   background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
   background-color: black;
@@ -197,5 +212,63 @@ section.contenido div.tarjeta div.descripcion div.texto button {
 section.contenido div.tarjeta div.descripcion div.texto button:hover {
   background-color: #82cbec;
   color: black;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+}
+
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    -webkit-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active, nav ul li a:hover {
+    background: none;
+    color: cyan;
+  }
+  section.contenido {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 0px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
