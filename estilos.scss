@@ -1,0 +1,94 @@
+$title-font: 'Lora', serif;
+$text-font: 'EB Garamond', serif;
+* >{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
+}
+
+section.contenido{
+    display: grid;
+    background-color: none;
+    border-radius: 30px;
+    margin: 100px 80px 80px 80px;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    border: 2px solid #e7e7e7;
+    div.tarjeta{
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        background-color: rgb(53, 97, 114);
+        border-radius: 30px;
+        flex-direction: column;
+        height: 90%;
+        div.tarjetaimg{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            justify-content: center; 
+            height: 60%;
+            img{
+                width: 100%;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            }
+        }
+        div.descripcion{
+            display: flex;
+            flex-flow: column;
+            height: 40%;
+            div.titulo{
+                display: flex;
+                width: 100%;
+                height: 30%;
+                justify-content: center;
+                align-items: flex-end;
+                font-family: $title-font;
+                font-size: 30px;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+            div.texto{
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                p{
+                    margin: 10px;
+                    margin-top: 0px;
+                    padding: 10px;
+                    padding-top: 0px;
+                   font-family: $text-font;
+                   font-size: 20px;
+                   width: 75%;
+                   text-align: justify;
+                }
+                button{
+                    background-color: #53e49bb4;
+                    border: 2px solid #e7e7e7;
+                    border-radius: 10px;
+                    color:black;
+                    padding: 16px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    transition-duration: 3s;
+                    cursor: pointer;
+                    width: 20%;
+                    height: 80px;
+                }
+                button:hover{
+                    background-color: rgb(130, 203, 236);
+                    color:black;
+                }
+            }
+        }
+    }
+}
+
