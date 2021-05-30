@@ -187,8 +187,8 @@ section.contenido div.tarjeta div.descripcion div.texto button {
   display: inline-block;
   font-size: 16px;
   margin: 2px 18px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 1 s;
+          transition-duration: 1 s;
   cursor: pointer;
   width: 20%;
   height: 80px;
