@@ -1,27 +1,71 @@
 $title-font: 'Lora', serif;
 $text-font: 'EB Garamond', serif;
 * >{
-    padding: 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
+header{
+    display: flex;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: darkgoldenrod;
+    div.logo{
+        padding: 0px 100px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        h1{
+            font-size: 50px;
+            font-weight: 900;
+            color: white;
+        }
+    }
+    ul{
+        background-color: darkcyan;
+        display: flex;
+        width: 30%;
+        align-items: center;
+        li{
+            width: 33%;
+            text-align: center;
+            border: 1px solid black;
+            list-style: none;
+        }
+    }
+    div.sign{
+        background-color: darkgreen;
+        display: flex;
+        align-items: center;
+    }
+}
 section.contenido{
+    background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
+    background-color: black;
     display: grid;
-    background-color: none;
-    border-radius: 30px;
-    margin: 100px 80px 80px 80px;
-    grid-template-columns: repeat( 2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    border: 2px solid #e7e7e7;
+    margin: 0px;
+    border: 0px;
+    padding-right: 100px; 
+    padding-left: 100px;
+    padding-top: 100px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 500px 500px;
+    gap: 60px;
+    min-height: 100%;
     div.tarjeta{
         display: flex;
         margin: 20px;
-        padding: 10px;
         background-color: rgb(53, 97, 114);
         border-radius: 30px;
         flex-direction: column;
@@ -29,9 +73,10 @@ section.contenido{
         div.tarjetaimg{
             display: flex;
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
             justify-content: center; 
-            height: 60%;
+            height: 50%;
+            overflow: hidden;
             img{
                 width: 100%;
                 border-top-left-radius: 30px;
@@ -45,9 +90,9 @@ section.contenido{
             div.titulo{
                 display: flex;
                 width: 100%;
-                height: 30%;
+                height: 35%;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: center;
                 font-family: $title-font;
                 font-size: 30px;
                 padding-top: 0px;
@@ -55,7 +100,7 @@ section.contenido{
             }
             div.texto{
                 display: flex;
-                align-items: flex-end;
+                align-items:center;
                 justify-content: center;
                 p{
                     margin: 10px;
@@ -72,13 +117,12 @@ section.contenido{
                     border: 2px solid #e7e7e7;
                     border-radius: 10px;
                     color:black;
-                    padding: 16px 32px;
                     text-align: center;
-                    text-decoration: none;
+                    text-decoration:dodgerblue;
                     display: inline-block;
                     font-size: 16px;
-                    margin: 4px 2px;
-                    transition-duration: 3s;
+                    margin: 2px 18px;
+                    transition-duration: 1 s;
                     cursor: pointer;
                     width: 20%;
                     height: 80px;

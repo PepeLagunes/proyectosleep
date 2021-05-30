@@ -1,24 +1,94 @@
 * > {
-  padding: 0%;
-  margin: 0%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: darkgoldenrod;
+}
+
+header div.logo {
+  padding: 0px 100px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+}
+
+header div.logo h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+
+header ul {
+  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  width: 33%;
+  text-align: center;
+  border: 1px solid black;
+  list-style: none;
+}
+
+header div.sign {
+  background-color: darkgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.contenido {
+  background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
+  background-color: black;
   display: -ms-grid;
   display: grid;
-  background-color: none;
-  border-radius: 30px;
-  margin: 100px 80px 80px 80px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  border: 2px solid #e7e7e7;
+  margin: 0px;
+  border: 0px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 100px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  gap: 60px;
+  min-height: 100%;
 }
 
 section.contenido div.tarjeta {
@@ -26,7 +96,6 @@ section.contenido div.tarjeta {
   display: -ms-flexbox;
   display: flex;
   margin: 20px;
-  padding: 10px;
   background-color: #356172;
   border-radius: 30px;
   -webkit-box-orient: vertical;
@@ -41,11 +110,12 @@ section.contenido div.tarjeta div.tarjetaimg {
   display: -ms-flexbox;
   display: flex;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 60%;
+  height: 50%;
+  overflow: hidden;
 }
 
 section.contenido div.tarjeta div.tarjetaimg img {
@@ -70,13 +140,13 @@ section.contenido div.tarjeta div.descripcion div.titulo {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 30%;
+  height: 35%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Lora", serif;
   font-size: 30px;
   padding-top: 0px;
@@ -87,9 +157,9 @@ section.contenido div.tarjeta div.descripcion div.texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -111,14 +181,14 @@ section.contenido div.tarjeta div.descripcion div.texto button {
   border: 2px solid #e7e7e7;
   border-radius: 10px;
   color: black;
-  padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
+  -webkit-text-decoration: dodgerblue;
+          text-decoration: dodgerblue;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  margin: 2px 18px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   cursor: pointer;
   width: 20%;
   height: 80px;
