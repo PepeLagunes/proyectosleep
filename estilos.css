@@ -127,6 +127,26 @@ section.Home .presentacionhome div img {
   border-radius: 300px;
 }
 
+/*-----------------------------WhatAbout------------------------------------------*/
+section.About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #61a6bd;
+}
+
+section.About div.Contador {
+  background-color: coral;
+  height: 100px;
+}
+
+section.About div.calculadora {
+  background-color: cornflowerblue;
+  height: 100px;
+}
+
 /*----------------------------TARJETAS-------------------------------------------*/
 section.contenido {
   background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
@@ -210,7 +230,7 @@ section.contenido div.tarjeta div.descripcion div.titulo {
   font-size: 30px;
   padding-top: 0px;
   margin-top: 0px;
-  color: "#1a1344";
+  color: #1a1344;
 }
 
 section.contenido div.tarjeta div.descripcion div.titulo h2 {
@@ -238,7 +258,7 @@ section.contenido div.tarjeta div.descripcion div.texto p {
   font-size: 18px;
   width: 75%;
   text-align: justify;
-  color: "#1a1344";
+  color: #1a1344;
 }
 
 section.contenido div.tarjeta div.descripcion div.texto button {
