@@ -99,8 +99,32 @@ input[type="checkbox"] {
 
 /*----------------------------HOME-----------------------------------------------*/
 section.Home {
-  background-color: lightblue;
+  background-color: #61a6bd;
   height: 900px;
+}
+
+section.Home .presentacionhome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.Home .presentacionhome h1 {
+  font-size: 600%;
+  font-family: "Lora", serif;
+}
+
+section.Home .presentacionhome div img {
+  margin-right: 150px;
+  height: 450px;
+  border-radius: 300px;
 }
 
 /*----------------------------TARJETAS-------------------------------------------*/
@@ -130,7 +154,7 @@ section.contenido div.tarjeta {
   display: -ms-flexbox;
   display: flex;
   margin: 20px;
-  background-color: #356172;
+  background-color: #61a6bd;
   border-radius: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -186,7 +210,11 @@ section.contenido div.tarjeta div.descripcion div.titulo {
   font-size: 30px;
   padding-top: 0px;
   margin-top: 0px;
-  color: #e7e7e7;
+  color: "#1a1344";
+}
+
+section.contenido div.tarjeta div.descripcion div.titulo h2 {
+  font-family: "Lora", serif;
 }
 
 section.contenido div.tarjeta div.descripcion div.texto {
@@ -210,7 +238,7 @@ section.contenido div.tarjeta div.descripcion div.texto p {
   font-size: 18px;
   width: 75%;
   text-align: justify;
-  color: #e7e7e7;
+  color: "#1a1344";
 }
 
 section.contenido div.tarjeta div.descripcion div.texto button {
@@ -238,6 +266,20 @@ section.contenido div.tarjeta div.descripcion div.texto button:hover {
   color: black;
 }
 
+footer {
+  background-color: lightblue;
+}
+
+footer div.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*--------------------------------------------------------RESPONSIVE-----------------------------------------------*/
 @media (max-width: 1000px) {
   nav {
     padding: 0 40px 0 50px;

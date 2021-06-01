@@ -1,6 +1,7 @@
 $title-font: 'Lora', serif;
 $text-font: 'EB Garamond', serif;
 $main-color: '#1a1344';
+$secondary-color: 'rgb(97, 166, 189)';
 * >{
     padding: 0px;
     margin: 0px;
@@ -74,8 +75,25 @@ input[type="checkbox"]{
 /*----------------------------HOME-----------------------------------------------*/
 
 section.Home{
-  background-color: lightblue;
-  height: 900px;
+    background-color: rgb(97, 166, 189);
+    height: 900px;
+    .presentacionhome{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        h1{
+          font-size: 600%;
+          font-family: $title-font;   
+        }
+        div{
+          img{
+            margin-right: 150px;
+            height: 450px;
+            border-radius: 300px;
+          }
+        }
+    }
 }
 
 /*----------------------------TARJETAS-------------------------------------------*/
@@ -96,7 +114,7 @@ section.contenido{
     div.tarjeta{
         display: flex;
         margin: 20px;
-        background-color: rgb(53, 97, 114);
+        background-color: rgb(97, 166, 189);
         border-radius: 30px;
         flex-direction: column;
         height: 90%;
@@ -128,7 +146,10 @@ section.contenido{
                 font-size: 30px;
                 padding-top: 0px;
                 margin-top: 0px;
-                color: #e7e7e7;
+                color:$main-color;
+                h2{
+                  font-family: $title-font;
+                }
             }
             div.texto{
                 display: flex;
@@ -143,7 +164,7 @@ section.contenido{
                    font-size: 18px;
                    width: 75%;
                    text-align: justify;
-                   color: #e7e7e7;
+                   color: $main-color;
                 }
                 button{
                     background-color: #1a1344;
@@ -170,6 +191,14 @@ section.contenido{
         }
     }
 }
+footer{
+  background-color: lightblue;
+  div.redes{
+    display: flex;
+    justify-content: center;
+  }
+}
+/*--------------------------------------------------------RESPONSIVE-----------------------------------------------*/
 @media (max-width: 1000px){
     nav{
       padding: 0 40px 0 50px;
