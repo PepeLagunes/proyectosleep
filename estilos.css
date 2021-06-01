@@ -28,7 +28,7 @@ nav {
   display: flex;
   height: 80px;
   width: 100%;
-  background: #1b1b1b;
+  background: #1a1344;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -41,9 +41,19 @@ nav {
 }
 
 nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo img {
+  height: 90px;
 }
 
 nav .menu-btn i {
@@ -87,7 +97,13 @@ input[type="checkbox"] {
   display: none;
 }
 
-/*----------------------------Fin de navbar-----------------------------------------------*/
+/*----------------------------HOME-----------------------------------------------*/
+section.Home {
+  background-color: lightblue;
+  height: 900px;
+}
+
+/*----------------------------TARJETAS-------------------------------------------*/
 section.contenido {
   background-image: url(https://media.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.gif);
   background-color: black;
@@ -104,6 +120,9 @@ section.contenido {
       grid-template-rows: 500px 500px;
   gap: 60px;
   min-height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.contenido div.tarjeta {
@@ -118,6 +137,7 @@ section.contenido div.tarjeta {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 90%;
+  max-width: 500px;
 }
 
 section.contenido div.tarjeta div.tarjetaimg {
@@ -166,6 +186,7 @@ section.contenido div.tarjeta div.descripcion div.titulo {
   font-size: 30px;
   padding-top: 0px;
   margin-top: 0px;
+  color: #e7e7e7;
 }
 
 section.contenido div.tarjeta div.descripcion div.texto {
@@ -189,21 +210,24 @@ section.contenido div.tarjeta div.descripcion div.texto p {
   font-size: 18px;
   width: 75%;
   text-align: justify;
+  color: #e7e7e7;
 }
 
 section.contenido div.tarjeta div.descripcion div.texto button {
-  background-color: #53e49bb4;
-  border: 2px solid #e7e7e7;
+  background-color: #1a1344;
+  border: 2px solid black;
   border-radius: 10px;
-  color: black;
+  color: white;
+  font-family: "EB Garamond", serif;
+  font-size: 0%;
   text-align: center;
   -webkit-text-decoration: dodgerblue;
           text-decoration: dodgerblue;
   display: inline-block;
   font-size: 16px;
   margin: 2px 18px;
-  -webkit-transition-duration: 1 s;
-          transition-duration: 1 s;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
   cursor: pointer;
   width: 20%;
   height: 80px;
@@ -269,6 +293,25 @@ section.contenido div.tarjeta div.descripcion div.texto button:hover {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     padding: 0px;
+  }
+  section.contenido div.tarjeta {
+    width: 300px;
+    height: 400px;
+  }
+  section.contenido div.tarjeta div.descripcion div.titulo h2 {
+    font-size: 80%;
+  }
+  section.contenido div.tarjeta div.descripcion div.texto {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.contenido div.tarjeta div.descripcion div.texto p {
+    font-size: 85%;
+  }
+  section.contenido div.tarjeta div.descripcion div.texto button {
+    margin-left: 0px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
