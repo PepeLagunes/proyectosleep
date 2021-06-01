@@ -347,6 +347,33 @@ footer div.redes {
     background: none;
     color: cyan;
   }
+  /*------------------HOME-----------------*/
+  section.Home {
+    background-color: #61a6bd;
+    height: 600px;
+  }
+  section.Home .presentacionhome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.Home .presentacionhome h1 {
+    font-size: 350%;
+    font-family: "Lora", serif;
+  }
+  section.Home .presentacionhome div img {
+    margin: 0px;
+    width: 90%;
+  }
+  /*------------------TARGETAS------------*/
   section.contenido {
     display: -ms-grid;
     display: grid;

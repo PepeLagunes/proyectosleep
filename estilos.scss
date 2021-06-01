@@ -258,6 +258,28 @@ footer{
       background: none;
       color: cyan;
     }
+    /*------------------HOME-----------------*/
+    section.Home{
+      background-color: rgb(97, 166, 189);
+      height: 600px;
+      .presentacionhome{
+          display: flex;
+          flex-flow: column;
+          height: 100%;
+          align-items: center;
+          h1{
+            font-size: 350%;
+            font-family: $title-font;   
+          }
+          div{
+            img{
+              margin: 0px;
+              width: 90%;
+            }
+          }
+      }
+  }
+    /*------------------TARGETAS------------*/
     section.contenido{
         display: grid;
         grid-template-columns: auto;
